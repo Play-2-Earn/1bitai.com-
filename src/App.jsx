@@ -24,6 +24,9 @@ const QuantumAIPlatform = () => {
       color: "bg-gradient-to-r from-amber-500 to-orange-600",
     },
   };
+const handleRedirect = () => {
+    window.location.href = "https://www.b1tcoin.ai/";
+  };
 
   return (
     <div className="min-h-screen bg-[#020817] text-white overflow-hidden relative">
@@ -73,7 +76,9 @@ const QuantumAIPlatform = () => {
             <Framer className="w-12 h-12 text-purple-400 animate-bounce" />
           </div>
 
-          <button className="bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-4 px-8 rounded-full text-xl flex items-center justify-center mx-auto space-x-3 group">
+          <button className="bg-cyan-600 hover:bg-cyan-700 text-white font-bold py-4 px-8 rounded-full text-xl flex items-center justify-center mx-auto space-x-3 group" 
+            onClick={handleRedirect}
+          >
             <span>Enter Quantum Realm</span>
             <Send className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
           </button>
